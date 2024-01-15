@@ -30,7 +30,7 @@ function App() {
       headers: {
         "Content-Type": "application/json",
         "Authorization": token
-      },withCredentials:true,
+      },credentials:"include",
     });
 
     const data = await res.json();
